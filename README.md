@@ -6,4 +6,4 @@ $pkg install git
 $git clone
 https://github.com/P4NP/bruteforce-word-list-generator
 $cd bruteforce-word-list-generator
-$ python  
+$ python word-list-generator.py
