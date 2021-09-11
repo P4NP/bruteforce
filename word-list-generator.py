@@ -1,5 +1,5 @@
 
-	import random
+import random
 import colorama
 from colorama import Fore, Back, Style
 import sys
@@ -12,7 +12,7 @@ if sys.version_info[0] != 3:
     fb.py\n\t--------------------------------------''')
     sys.exit()
 init(autoreset=True)
-print(f"   {Fore.GREEN}  {Style.BRIGHT} WORDLIST GENERATOR")
+print(f"   \n{Fore.GREEN}  {Style.BRIGHT} ---------WORDLIST GENERATOR--------\n")
 print("______________________________________")
 
 print(f"{Style.BRIGHT}{Back.BLUE}A tool developer : P4NP")
@@ -32,26 +32,26 @@ elif (A == "N"):
 elif (A == "n"):
 		print("use it in your own risk")		
 else:
-			print ("some thing went wrong")
+			print (f"{Style.BRIGHT}{Fore.RED}Some thing went wrong")
 			sys.exit(0)
 	 	
-min_length = input("Enter the minimum length of  password: ")
+min_length = input(f"{Style.BRIGHT}{Fore.YELLOW} Enter the minimum length of  password: ")
 if min_length in num:
 	 	print("")
 else:
-	 		print("invalid or large num ")
+	 		print(f"{Style.BRIGHT}{Fore.RED}Invalid or large num ")
 	 		sys.exit(0)	
-max_length= input("Enter the maximum length of password: ")
+max_length= input(f"{Style.BRIGHT}{Fore.YELLOW} Enter the maximum length of password: ")
 if max_length in num:
 	print("")
 else:
-	print("invalid or large num ")
+	print(f"{Style.BRIGHT}{Fore.RED}Invalid or large num ")
 	sys.exit(0)
 	
 mini = int(min_length)	
 maxi=int(max_length)
 
-print(f"  {Fore.BLUE} Your password list is creating please wait......")
+print(f"  {Fore.BLUE} {Style.BRIGHT} Your Word list is creating please wait......")
 
 counter =0
 character=string.ascii_lowercase+string.ascii_uppercase+string.digits+string.punctuation
@@ -63,4 +63,6 @@ for i in range (mini , maxi+1):
 			     		file_open.write("\n")
 			     		counter+=1
 			     		
-print("Password  list {} has been generated in password.txt" .format(counter))     
+print( Style.BRIGHT+" Word list {} has been generated in password.txt" .format(counter))
+sys.exit(0)
+			     
