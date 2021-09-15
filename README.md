@@ -1,9 +1,9 @@
 # bruteforce
 # installation
-$pkg install pyhon
+$pkg install python
 $pkg install git
-
-$git clone
-https://github.com/P4NP/bruteforce-word-list-generator
-$cd bruteforce-word-list-generator
+$pip install colorama
+$git clone https://github.com/P4NP/bruteforce-word-list-generator
+# To run
+$ cd bruteforce-word-list-generator
 $ python word-list-generator.py
